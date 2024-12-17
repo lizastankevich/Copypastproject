@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+
+/*header: nav*/
+nav{ 
+    margin: 10px; 
+    padding-bottom: 5vh; 
+}  
+
+.hyper{ 
+    background-color: rgb(0, 123, 255); 
+    border: 5px solid; 
+    border-color: rgba(220, 202, 202, 0);
+    color:white;
+    position: absolute; 
+    z-index: 2; 
+    padding: 7px 10px; 
+    border-radius: 5px; 
+    text-decoration: none;
+}
+.hyper:hover{ 
+    background-color: #056ad7; 
+} 
+.hyper:active{ 
+    border: 5px solid rgba(98, 165, 243, 0.484); 
+} 
+
+.g{ 
+    float: left; 
+    margin-left: 70px; 
+    margin-top: 5px; 
+    font-size: 25px; 
+} 
+
+.hyperlink{ 
+    float: right; 
+    margin-right: 140px; 
+} 
+
+
+.block1{
+    position: relative;
+    background-color: #343a40;
+    background: url(https://learn.seytech.co/assets/projects/html-css/projects/3-landing/img/bg-masthead.jpg) center; 
+    background-size: cover; 
+    height: 60vh;
+    text-align: center; 
+}
+.darking{
+    position: absolute;
+    background-color: hwb(213 20% 76%);
+    height: 100%;
+    width: 100%;
+    top:0;
+    opacity: .3;
+}
+
+@media (min-width: 768px) {
+    .block1{
+        padding-top:12vh;
+        padding-bottom:12vh;
+    }
+
+    .block1 h1 {
+        font-size: 3.5rem;
+    }
+}
+
+.fortext{
+    position: relative; 
+    top:15%; 
+}
+
+.textinblock{ 
+    color: white; 
+    font-weight: 700; 
+    font-size: 50px; 
+    padding: 0% 13% 0% 13%; 
+    margin-bottom: 50px; 
+} 
+#forminblock{
+    flex-direction: row;
+}
+.textblock{ 
+    padding: 12px  150px; 
+    border-radius: 7px; 
+    border-color: white;
+    font-size: 18px; 
+    margin-right: 10px;
+}
+.inblock{
+    padding: 12px 25px;
+}
+
+@media (max-width: 768px) {
+    #forminblock {
+        flex-direction:column;
+    }
+    .inblock {
+        padding: 12px 150px;
+    }
+}
+
+
+
+/* make the space between */
+#icons {
+    background-color:rgb(218, 218, 219);
+    padding: 100px;
+  }
+  
+  .innerblock {
+    display: flex;
+    justify-content: center; /* сenter the icons horizontally */
+    flex-wrap: wrap; /*  items will wrap on smaller screens correctly*/
+    gap: 30px; /* spacing between icons */
+    text-align: center;
+    position: relative center;
+    max-width: 1200px; 
+  }
+  
+  .icons {
+    display:inline-block; 
+    flex: 1 33%; 
+    max-width: 300px; /* prevent items from being too wide */
+  }
+  
+  img.icon {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    /*additional*/
+  transition: transform 0.3s ease, opacity 0.3s ease; /* smooth hover effect */
+
+  }
+  
+  img.icon:hover {
+    transform: scale(1.1); /* a little bit large img on hover */
+    opacity: 0.8; /* чуть прозрачность */
+  }
+  
+  .undericon {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .icons p {
+    font-size: 0.9rem;
+    color: #303030	; 
+    font-weight: lighter;
+    line-height: 1.25;
+  }
+
+
+:root{  
+    --light-color: #f4f4f4;  
+}
+.falsebody { 
+    font-family: Arial, sans-serif; 
+    background-color: #f9f9f9; 
+    color: #333; 
+} 
+ 
+h3 { 
+    margin: 20px; 
+    font-size: 1.8em; 
+    font-weight: bold; 
+} 
+ 
+/* Сетка */ 
+.grid-container { 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 0; /*Убираем зазор */ 
+    width: 100%; 
+} 
+ 
+.grid-item { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background-color: var(--light-color); 
+} 
+ 
+/* Текстовые блоки */ 
+.onlytext{
+    padding: 15%;
+    text-align: left; 
+}
+
+.onlytext p{ 
+font-size: 1em; 
+line-height: 1.5; 
+} 
+
+/* Изображения */ 
+.image img { 
+    width: 100%; 
+    height: 100%; 
+}
+
+/* Вообще все (контейнер)*/ 
+.Threepersons_all{ 
+    padding: 0px; 
+    margin: 0px; 
+    background-color: #f8f9fa; 
+    padding-top: 70px; 
+    padding-bottom: 30px; 
+} 
+/* Надпись сверху */ 
+.Threepersons_headline{ 
+    text-align: center; 
+    margin-bottom: 3rem !important; 
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+    font-weight: 700; 
+    font-size: 2rem; 
+    line-height: 1.2; 
+} 
+/* Див для картинок с надписями */ 
+.threepersons{ 
+    display: grid; 
+    width: 100%; 
+    height: 400px; 
+    text-align: center; 
+    margin: 5px 5px 5px 5px; 
+    grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%; 
+} 
+/* железный человек див со всем  */ 
+.ironman{ 
+    padding: 0px 10px; 
+    grid-column: 3/7; 
+} 
+/* Странный ребенок див со всем */ 
+.kid{ 
+    grid-column: 9/14; 
+} 
+/* Див с кошкой и всем */ 
+.cat{ 
+    /* position: relative; 
+    padding-left: -30px!important; */ 
+    grid-column: 15/20; 
+} 
+/* Общие настройки для фоток */ 
+.threepersons_photo{ 
+    border-radius: 50%; 
+    object-fit: cover; 
+    box-shadow: 0 5px 5px 0 #adb5bd;
+} 
+/*  */ 
+.threepersons_names{ 
+    font-size: 1.25rem; 
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+    font-weight: 700; 
+} 
+/*  */ 
+.threepersons_text{ 
+    font-weight: 300; 
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+} 
+/* Железный человек сьежает без этого */ 
+.invisable{ 
+    color: white; 
+} 
+
+/*footer*/
+.block3{ 
+    background-image: url(https://learn.seytech.co/assets/projects/html-css/projects/3-landing/img/bg-masthead.jpg); 
+    background-position: center;
+    height: 40vh; 
+    background-size: cover; 
+    text-align: center!important; 
+} 
+.fortext2{
+    position: relative; 
+    top: 30%; 
+}
+
+
+
+
+
+#footer {
+    padding: 30px;
+    background-color: #f9f9f9; 
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333; 
+}
+  
+.links a {
+    text-decoration: none;
+    color: rgb(5, 106, 215);
+    margin: 10px 5px;
+  }
+  
+.footer-text {
+    color: #666; 
+}
+  
+.footer-social {
+    float:right;
+  }
