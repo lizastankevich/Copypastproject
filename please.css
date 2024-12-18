@@ -67,6 +67,14 @@ nav{
     }
 }
 
+@media (max-width: 768px) {
+    .innerblock {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .fortext{
     position: relative; 
     top:15%; 
@@ -114,7 +122,7 @@ nav{
     display: flex;
     justify-content: center; /* сenter the icons horizontally */
     flex-wrap: wrap; /*  items will wrap on smaller screens correctly*/
-    gap: 30px; /* spacing between icons */
+    gap: 10%; /* spacing between icons */
     text-align: center;
     position: relative center;
     max-width: 1200px; 
@@ -122,8 +130,7 @@ nav{
   
   .icons {
     display:inline-block; 
-    flex: 1 33%; 
-    max-width: 300px; /* prevent items from being too wide */
+    max-width: 25%;
   }
   
   img.icon {
